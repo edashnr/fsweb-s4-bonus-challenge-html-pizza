@@ -1,69 +1,13 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color:#FAF7F2;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -71,27 +15,579 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+
+/* Header */
+
+.header-content {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align:center; 
+  background-image: url(../assets/iteration-1/home-banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2rem; 
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.header-content .logo {
+  width: 350px; 
+  margin-bottom: 0%;
+}
+.mobil-image{
+  display: none;
+}
+.nav-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.2rem;
+}
+.p1 {
+  font-family: 'Satisfy', cursive  !important;
+  font-size: 2rem;
+  color:#FDC913;
+  margin-top: 2;
+  margin-bottom: 0;
+}
+.nav-items h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  max-width: 600px;
+  font-family:'Roboto Condensed', sans-serif  !important;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 1rem; 
+  line-height: 4rem;
+}
+.btn {
+  background-color: #FDC913;
+  font-family:'Barlow' !important;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  color:black;
+  margin-top: 1rem;
+  margin-bottom: 45rem;
+}
+.icon-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0;
+  padding: 10px 0;
+  background-color:white;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 10px;
+  font-family: 'Barlow';
+  font-size: 0.8rem;
+  color: black;
+  gap: 0.4rem ;
+}
+.icons img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Orta Kısım */
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fast-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1020;
+  margin:1rem;
+}
+.kart-1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../fsweb-s4-bonus-challenge-html-pizza/public/assets/iteration-2/cta/kart-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding:2rem;
+  justify-content: flex-start;
+  text-align: left; 
+  align-items: flex-start;
+  color:white;
+  margin :1rem;
+  width: 400px; 
+  height: 300px;
+}
+.btn-1 {
+  background-color: white;
+  font-family:'Barlow' !important;
+  border: none;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 20px;
+  color:#CE2829;
+  text-transform: uppercase;
+}
+.kart-1 h2 {
+  font-family: "Quattrocento";
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  max-width: 200px;
+}
+.p2 {
+  font-family:"Roboto Condensed";
+  font-size: 25px;
+  margin-top: 0;
+}
+.p2-0 { 
+  font-family:"Roboto Condensed";
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.p2-1 {
+  font-family:"Roboto Condensed";
+  font-size: 25px;
+  color:#292929;
+  font-weight: bold;
+}
+.p2-0-1 {
+  font-family:"Roboto Condensed";
+  font-size: 25px;
+  margin-top: 0;
+  color:#292929;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.kart-2 {
+  display: flex;
+  flex-direction: column;
+  width: 465px; 
+  height: 365px;
+  justify-content: space-around;
+}
+.kart-2-1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../fsweb-s4-bonus-challenge-html-pizza/public/assets/iteration-2/cta/kart-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding:35px;
+  margin-top: 0;
+  justify-content: flex-start;
+  text-align: left; 
+  align-items: flex-start;
+  line-height: 0;
+  color:white;
+ border-radius: 0.5rem;
+}
+.kart-2-2 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../fsweb-s4-bonus-challenge-html-pizza/public/assets/iteration-2/cta/kart-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 35px;
+  justify-content: flex-start;
+  color:white;
+  align-items: flex-start;
+  text-align: left; 
+  line-height: 0;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem;
+}
+.red-text {
+  color: #CE2829;
+  font-weight: bold;
+}
+
+/*Menü kısmı */
+.menu-section {
+  display: flex;
+  flex-direction: column;
+}
+.ara-baslik {
+ text-align: center;
+}
+.p3 {
+  font-family:"Satisfy" ;
+  color :#CE2829;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.ara-baslik h3 {
+  font-family:"Barlow" ;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 2px;
+}
+.foods-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 10px 0;
+}
+.food-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 15px;
+  font-family: "Roboto Condensed";
+  font-size: 1rem;
+  color: black;
+  gap: 0.4rem ;
+  border-radius: 25px;
+}
+.foods-bar .food-item:nth-child(2){
+  background-color: black;
+  color:white;
+}
+.food-item img {
+  width: 30px;
+  height: 30px;
+}
+.food-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.food-kart {
+  width: 290px;
+  border-radius: 10px;
+  padding: 10px 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  background: white;
+
+}
+.food-img {
+  width: 100%;
+  object-fit: cover;
+}
+.food-info h3 {
+  margin: 1rem 1rem 0.5rem 1.5rem; /* Üst sağ alt sol */
+  font-family:"Roboto Condensed";
+  color: #333;
+}
+.kart-items{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 1rem;
+}
+.puan {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  color:#5F5F5F;
+}
+
+.fiyat {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed';
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content:center;
+  background-color: #292929;
+  position: relative;
+  padding-bottom: 40px;
+}
+.main-footer {
+   display: flex;
+   justify-content:center;
+   padding: 2rem;
+   color: white;
+   font-family: 'Barlow';
+   padding: 3rem;
+}
+
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:1rem;
+}
+.footer-1 .logo {
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  margin-right: auto;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+}
+.footer-2 {
+  text-align: left;
+  padding: 0;
+  margin: 1.4rem;
+  display: flex; 
+  flex-direction: column;
+}
+ h4 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight:500;
+}
+.footer-2 p {
+  margin: 0; 
+  padding: 2px 0; 
+  line-height: 1.4; 
+  display: block;    
+  width: 100%;
+}
+.footer-3 {
+  margin:1rem;
+  line-height: 2rem;
+  width: 300px;
+}
+.insta {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ins {
+  width: calc(33.33% - 0.5rem);
+}
+.copyright {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0;
+  color:white;
+  border-top: 1px solid #5F5F5F;
+}
+/* Mobil Uyarlaması */
+
+@media(max-width: 600px) {
+  body {
+    min-width: 100%;
+    overflow-x: hidden;
   }
-  a:hover {
-    color: #747bff;
+  .header-content {
+    background-image: none; 
+    background-color:#CE2829;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
   }
-  button {
-    background-color: #f9f9f9;
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
   }
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .p1 {
+    display: none;
+  }
+  .nav-items h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .btn {
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+  }
+  .mobil-image {
+    display: inline;
+    height: auto;
+    width: 60rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(20%)  rotate(180deg);
+    clip-path: inset(20% 0 0 0);
+  }
+  .icon-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Öğeler arası boşluk */
+    padding: 40px;
+  }
+  .icons{
+    width: calc(40% - 10px);
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin:5px;
+    gap: 8px;
+  }
+  .icons img {
+    width: 80px !important; /* Küçük ikon boyutu */
+    height: 50px !important;
+    margin: 0;
+  }
+  .icons span {
+    font-size: 1rem !important; /* Yazı boyutunu ayarla */
+    text-align: left;
+    white-space: nowrap;
+    margin:0;
+  }
+  /* orta kısım*/
+  .menu-section {
+  align-items: center;
+  }
+  .fast-order{
+    flex-wrap: wrap;
+  }
+  .kart-1{
+    width: 400px; 
+    height: 200px;
+  }
+  .kart-2{
+    width: 465px; 
+    height: 465px;
+  }
+  .kart-2-1,.kart-2-2 {
+    padding:60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  /*Menü kısmı */
+  .p3 {
+    font-size: 40px;
+  }
+  .ara-baslik {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ara-baslik h3 {
+    font-size: 50px;
+    max-width: 370px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .foods-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    row-gap: 0;
+    padding: 70px;
+    width: 500px;
+    
+  }
+  .food-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    margin:5px;
+    gap: 15px;
+    border-radius: 40px;
+    width: 140px;
+  }
+  .food-item img {
+    width: 60px;
+    height: 60px;
+  }
+  .food-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .food-kart{
+    width: 400px;
+  }
+  .kart-items {
+    gap: 10rem;
+  }
+
+  /* footer */
+  footer {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .main-footer{
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 300px;;
+  }
+  .address span {
+    font-size: 1.2rem;
+  }
+  .main-footer p {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .footer-1{
+   margin-top: 3rem;
+   margin-bottom: 1rem;
+  }
+  .footer-2{
+    margin:1rem;
+  }
+  .footer-3 {
+    margin-bottom: 2rem;
+  }
+  .insta {
+    width: 300px;
+    border: 2px solid white;
+    gap: 1rem;
+  }
+  .puan{
+    gap:13rem;
+  }
+  .fiyat{
+    margin: 1rem;
+  }
+  .puan{
+    margin-left: 0.5rem;
+  }
+  .kart-items{
+    gap: 2rem;
+    justify-content:flex-start;
+  }
+
 }
